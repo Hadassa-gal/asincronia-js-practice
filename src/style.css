@@ -10,8 +10,8 @@ body{
   background-color: black;
 }
 .titulo{
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 .container{
   display: flex;
@@ -50,11 +50,13 @@ body{
   border-radius: 15px;
 }
 .nose{
+  justify-self: center;
+  width: 60vw;
   background-color: #11115c;
   border-radius: 25px;
 }
 .imgs{
-  width: 80vw;
+  width: 40vw;
 }
 .peso{
   font-size: 2rem;
