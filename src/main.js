@@ -1,7 +1,4 @@
-const edad = document.getElementById('edad').value;
-const nombre = document.getElementById('nombre');
-const peso = document.getElementById('peso');
-const alt = document.getElementById('altura');
+
 const boton= document.getElementById('calcular');
 const form = document.querySelector("#form");
 const divInferior = document.querySelector("#hidden")
@@ -14,19 +11,55 @@ document.querySelector('#calcular').addEventListener('click',(e) =>
   console.log(datos) 
   if (imc < 19.8) {
     imcr = 'bajo peso';
+    divInferior.innerHTML = `
+    <div>
+      <div class="text">
+        <p class="peso">${imcr}</p>
+        <p class="imc">${imc}</p>
+      </div>
+      
+    </div>
+    <img src="./src/storage/baix-pes2.jpg" class="imgs"></img>
+    `
   } else if (imc >= 19.9 && imc <= 26) {
     imcr = 'peso normal';
+    divInferior.innerHTML = `
+    <div>
+      <div class="text">
+        <p class="peso">${imcr}</p>
+        <p class="imc">${imc}</p>
+      </div>
+      
+    </div>
+    <img src="./src/storage/pesonormal.jpg" class="imgs"></img>
+    `
   } else if (imc >= 26.1 && imc <= 29) {
     imcr = 'sobrepeso';
+    divInferior.innerHTML = `
+    <div>
+      <div class="text">
+        <p class="peso">${imcr}</p>
+        <p class="imc">${imc}</p>
+      </div>
+      
+    </div>
+    <img src="./src/storage/images.jpg" class="imgs"></img>
+    `
   } else if (imc >= 29.1) {
     imcr = 'obesidad';
+    divInferior.innerHTML = `
+    <div>
+      <div class="text">
+        <p class="peso">${imcr}</p>
+        <p class="imc">${imc}</p>
+      </div>
+      
+    </div>
+    <img src="./src/storage/images (1).jpg" class="imgs"></img>
+    `
   }
-  divInferior.innerHTML = `
-  <div>
-     ${imc}
-  </div>
-  <img ></img>
-  `
+  
+    
    alert(imc) 
    console.log(imcr);
   e.preventDefault();

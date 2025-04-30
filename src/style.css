@@ -2,14 +2,17 @@
   box-sizing: border-box;
   padding: 2vw;
   text-align: center;
-  font-size: medium;
-  
+  color: white;
+  font-size: 1.2rem;
+}
+body{
+  background-color: black;
 }
 .container{
   display: flex;
   flex-direction: column;
-  background-color: aqua;
   justify-content: center;
+  justify-items: center;
   gap: 1vw;
 }
 .container_1{
@@ -17,15 +20,35 @@
   display: flex;
   flex-direction: row;
   width: 70vw;
-  background-color: azure;
   gap: 2vw;
+  justify-items: center;
+  justify-content: center;
+}
+.targeta{
+  background-color: #11115c;
+  border-radius: 30px;
+  border-color: 5px solid blue;
 }
 .btn{
-  align-self: center;
-  justify-self: center;
-  height: 2vw;
+  background-color: #11115c;
+  border-color: #8d8d8db4;
+  border-style: dashed;
+  height: 4vw;
   width: 20vw;
 }
 .barra{
   height: 1vw;
+  width: 25vw;
+  background-color: #8d8d8db4;
+  border-style: none;
+  border-radius: 15px;
+}
+.imgs{
+  width: 80vw;
+}
+.peso{
+  font-size: large;
+}
+.imc{
+  font-size: larger;
 }
