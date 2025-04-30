@@ -1,4 +1,4 @@
-
+const nuevo = document.getElementById('nuevo');
 const boton= document.getElementById('calcular');
 const form = document.querySelector("#form");
 const divInferior = document.querySelector("#hidden")
@@ -18,8 +18,8 @@ document.querySelector('#calcular').addEventListener('click',(e) =>
         <p class="imc">${imc}</p>
       </div>
       <img src="./src/storage/baix-pes2.jpg" class="imgs"></img>
+      <button type="submit" id="nuevo" class="btn">Nuevo</button>
     </div>
-    
     `
   } else if (imc >= 19.9 && imc <= 26) {
     imcr = 'peso normal';
@@ -30,8 +30,8 @@ document.querySelector('#calcular').addEventListener('click',(e) =>
         <p class="imc">${imc}</p>
       </div>
       <img src="./src/storage/pesonormal.jpg" class="imgs"></img>
+      <button type="submit" id="nuevo" class="btn">Nuevo</button>
     </div>
-    
     `
   } else if (imc >= 26.1 && imc <= 29) {
     imcr = 'sobrepeso';
@@ -42,6 +42,7 @@ document.querySelector('#calcular').addEventListener('click',(e) =>
         <p class="imc">${imc}</p>
       </div>
       <img src="./src/storage/images.jpeg" class="imgs"></img>
+      <button type="submit" id="nuevo" class="btn">Nuevo</button>
     </div>
     `
   } else if (imc >= 29.1) {
@@ -53,6 +54,7 @@ document.querySelector('#calcular').addEventListener('click',(e) =>
         <p class="imc">${imc}</p>
       </div>
       <img src="./src/storage/obesidad.jpeg" class="imgs"></img>
+      <button type="submit" id="nuevo" class="btn">Nuevo</button>
     </div>
     `
   }
@@ -60,10 +62,10 @@ document.querySelector('#calcular').addEventListener('click',(e) =>
   e.preventDefault();
 })
 
-const persona = [];
-
-
-const saludo = (e) =>{
-  alert("hola");
-  e.preventDefault();
-}
+document.querySelector('#nuevo').addEventListener('click',(e) =>{
+  divInferior.innerHTML = `
+    <p>
+    </p>
+    `
+    e.preventDefault();
+})
