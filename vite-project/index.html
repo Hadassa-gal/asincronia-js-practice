@@ -5,35 +5,37 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="./src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/src/main.js" defer></script>
+    <script src="./src/main.js" defer></script>
     <title>Vite App</title>
   </head>
   <body>
     <h1 id="titulo">CALCULADORA DE IMC</h1>
     <div id="container" class="container">
-      <div class="container_1" class="container_1">
-        <div class="container_up">
-          <h2>EDAD</h2>
-          <input type="text" id="edad" class="edad">
+      <div class="container_3">
+        <div class="container_1">
+          <div class="container_up">
+            <h2>EDAD</h2>
+            <input type="text" id="edad" class="edad">
+          </div>
+          <div class=container_down">
+            <h2>NOMBRE</h2>
+            <input type="text" id="nombre" class="nombre">
+          </div>
         </div>
-        <div class=container_down">
-          <h2>NOMBRE</h2>
-          <input type="text" id="nombre" class="nombre">
+        <div class="container_1">
+          <div class="container_up">
+            <h2>PESO</h2>
+            <input type="text" id="edad" class="peso">
+          </div>
+          <div class=container_down">
+            <h2>ESTATURA</h2>
+            <input type="text" id="nombre" class="estatura">
+          </div>
         </div>
       </div>
-      <div class="container_1" class="container_1">
-        <div class="container_up">
-          <h2>PESO</h2>
-          <input type="text" id="edad" class="peso">
-        </div>
-        <div class=container_down">
-          <h2>ESTATURA</h2>
-          <input type="text" id="nombre" class="estatura">
-        </div>
-        <button id="calcular">calcular</button>
-        <div class="container2" id="hidden">
+      <button id="calcular" class="btn">calcular</button>
+      <div class="container2" id="hidden">
 
-        </div>
       </div>
     </div>
   </body>
