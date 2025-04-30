@@ -41,7 +41,7 @@ document.querySelector('#calcular').addEventListener('click',(e) =>
         <p class="peso">${imcr}</p>
         <p class="imc">${imc}</p>
       </div>
-      <img src="./src/storage/images.jpg" class="imgs"></img>
+      <img src="./src/storage/images.jpeg" class="imgs"></img>
     </div>
     `
   } else if (imc >= 29.1) {
@@ -52,7 +52,7 @@ document.querySelector('#calcular').addEventListener('click',(e) =>
         <p class="peso">${imcr}</p>
         <p class="imc">${imc}</p>
       </div>
-      <img src="./src/storage/images (1).jpg" class="imgs"></img>
+      <img src="./src/storage/obesidad.jpeg" class="imgs"></img>
     </div>
     `
   }
