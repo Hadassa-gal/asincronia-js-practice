@@ -13,12 +13,19 @@
   gap: 1vw;
 }
 .container_1{
-  width: 20rem;
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
   background-color: azure;
-  
+  gap: 2vw;
 }
 .btn{
   align-self: center;
   justify-self: center;
-
+  height: 2vw;
+  width: 20vw;
+}
+.barra{
+  height: 1vw;
 }

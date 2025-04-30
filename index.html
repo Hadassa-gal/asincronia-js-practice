@@ -6,34 +6,39 @@
     <link rel="stylesheet" href="./src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./src/main.js" defer></script>
-    <title>Vite App</title>
+    <title>calculadora de imc</title>
   </head>
   <body>
-    <h1 id="titulo">CALCULADORA DE IMC</h1>
     <div id="container" class="container">
-      <div class="container_3">
+      <h1 id="titulo">CALCULADORA DE IMC</h1>
+      <form class="container_3" id="form">
         <div class="container_1">
           <div class="container_up">
             <h2>EDAD</h2>
-            <input type="text" id="edad" class="edad">
+            <input type="text" id="edad" class="edad barra">
           </div>
           <div class=container_down">
             <h2>NOMBRE</h2>
-            <input type="text" id="nombre" class="nombre">
+            <input type="text" id="nombre" class="nombre barra">
           </div>
         </div>
         <div class="container_1">
           <div class="container_up">
             <h2>PESO</h2>
-            <input type="text" id="edad" class="peso">
+            <input type="number" 
+            name="peso" 
+            id="peso" class="peso barra">
           </div>
           <div class=container_down">
             <h2>ESTATURA</h2>
-            <input type="text" id="nombre" class="estatura">
+            <input type="number" 
+            name="estatura" id="altura" class="estatura barra">
           </div>
         </div>
-      </div>
-      <button id="calcular" class="btn">calcular</button>
+        
+        <button type="submit" id="calcular" class="btn">calcular</button>
+      </form>
+      
       <div class="container2" id="hidden">
 
       </div>
