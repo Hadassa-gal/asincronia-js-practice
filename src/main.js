@@ -60,12 +60,26 @@ document.querySelector('#calcular').addEventListener('click',(e) =>
     </div>`;
   }
   console.log(imcr);
+  if ([...form.elements]){
+    [...form.elements].forEach(el =>{
+      if(el.tagName === "INPUT"){
+        el.disabled = true;
+      }
+    })
+  }
+    
   e.preventDefault();
 })
 
 divInferior.addEventListener('click',(e)=>{
   if(e.target && e.target.id === 'nuevo'){
-    divInferior.innerHTML = `<p></p>`;
+    divInferior.innerHTML = ``;
+    [...form.elements].forEach(el =>{
+      if(el.tagName === "INPUT"){
+        el.disabled = false;
+        el.value = '';
+      }
+    })
   }
   e.preventDefault();
 })
