@@ -1,5 +1,4 @@
 const boton= document.getElementById('calcular');
-
 const form = document.querySelector("#form");
 const divInferior = document.querySelector("#hidden");
 const texto = (imcr,imc,nombre,edad) => {
@@ -10,7 +9,7 @@ const texto = (imcr,imc,nombre,edad) => {
         <div class="text">
           <p class="peso1">${imcr}</p>
           <p class="imc">${imc}</p>
-          <p class="imc">${nombre} ${edad}</p>
+          <p class="imc">hola ${nombre}, usted tiene ${edad} y esta en ${imcr}</p>
         </div>
         <img src="./src/storage/baix-pes2.jpg" class="imgs"></img>
         <button type="submit" id="nuevo" class="btn">Nuevo</button>
@@ -22,7 +21,7 @@ const texto = (imcr,imc,nombre,edad) => {
         <div class="text">
           <p class="peso1">${imcr}</p>
           <p class="imc">${imc}</p>
-          <p class="imc">${nombre} ${edad}</p>
+          <p class="imc">hola ${nombre}, usted tiene ${edad} y esta en ${imcr}</p>
         </div>
         <img src="./src/storage/pesonormal.jpg" class="imgs"></img>
         <button type="submit" id="nuevo" class="btn">Nuevo</button>
@@ -34,7 +33,7 @@ const texto = (imcr,imc,nombre,edad) => {
           <div class="text">
             <p class="peso1">${imcr}</p>
             <p class="imc">${imc}</p>
-            <p class="imc">${nombre} ${edad}</p>
+            <p class="imc">hola ${nombre}, usted tiene ${edad} y esta en ${imcr}</p>
           </div>
           <img src="./src/storage/images.jpeg" class="imgs"></img>
           <button type="submit" id="nuevo" class="btn">Nuevo</button>
@@ -46,7 +45,7 @@ const texto = (imcr,imc,nombre,edad) => {
             <div class="text">
               <p class="peso1">${imcr}</p>
               <p class="imc">${imc}</p>
-              <p class="imc">${nombre} ${edad}</p>
+              <p class="imc">hola ${nombre}, usted tiene ${edad} y esta en ${imcr}</p>
             </div>
             <img src="./src/storage/obesidad.jpeg" class="imgs"></img>
             <button type="submit" id="nuevo" class="btn">Nuevo</button>
