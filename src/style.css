@@ -37,12 +37,14 @@ body{
 .btn{
   color: #11115c;
   background-color: #8a8a94;
-  border-color: #8d8d8db4;
+  border-color: #cfcfcfb4;
+  border-radius: 20px;
   border-style: dashed;
+  border-width: 1vw;
   width: 40vw;
 }
 .barra{
-  height: 1vw;
+  height: 2vw;
   width: 25vw;
   background-color: #8d8d8d;
   border-style: none;
@@ -56,6 +58,7 @@ body{
 }
 .imgs{
   width: 40vw;
+  border-radius: 20px;
 }
 .peso1{
   font-size: 2rem;
