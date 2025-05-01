@@ -63,7 +63,7 @@ document.querySelector('#calcular').addEventListener('click',(e) =>{
   } else {
     const datos = Object.fromEntries(new FormData(form).entries())
     let imcr = '';
-    let imc = datos.peso / (datos.estatura ** 2);
+    let imc = (datos.peso / (datos.estatura ** 2)).toFixed(2);
     let nombre = datos.nombre;
     let edad = datos.edad;
     console.log(datos);
